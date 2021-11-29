@@ -1,0 +1,26 @@
+{
+    "products": [
+        {
+            "prod_id": 1,
+            "name": "TShirt",
+            "description": "Full Sleeve , Round Neck Winter Warm ",
+            "price": 13.99,
+            "availability": "Yes"
+           
+        },
+        {
+            "prod_id": 1,
+            "name": "TShirt",
+            "description": "Full Sleeve , Round Neck Winter Warm ",
+            "price": 13.99,
+            "availability": "Yes"
+        },
+        {
+            "prod_id": 1,
+            "name": "TShirt",
+            "description": "Full Sleeve , Round Neck Winter Warm ",
+            "price": 13.99,
+            "availability": "Yes"
+        }
+    ]
+}

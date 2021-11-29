@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "prod_id": 12,
+      "name": "T shirt ",
+      "description": "Round Neck , Winter , Full Sleeve",
+      "price": "49.99",
+      "availability": "Yes",
+      "id": 1
+    },
+    {
+      "prod_id": 5,
+      "name": "T shirt ",
+      "description": "Round Neck , Winter , Full Sleeve",
+      "price": "35",
+      "availability": "Yes",
+      "id": 2
+    },
+    {
+      "prod_id": 12,
+      "name": "T shirt ",
+      "description": "Round Neck , Winter , Full Sleeve",
+      "price": "39.99",
+      "availability": "Yes",
+      "id": 3
+    },
+    {
+      "prod_id": 12,
+      "name": "T shirt ",
+      "description": "Round Neck , Winter , Full Sleeve",
+      "price": "19.99",
+      "availability": "Yes",
+      "id": 4
+    },
+    {
+      "prod_id": 19,
+      "name": "Perfume",
+      "description": "Men's Perfume, 200ml",
+      "price": "99.99",
+      "availability": "Yes",
+      "id": 5
+    },
+    {
+      "prod_id": 20,
+      "name": "Perfume",
+      "description": "Women's, 100ml",
+      "price": "79.99",
+      "availability": "No",
+      "id": 6
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

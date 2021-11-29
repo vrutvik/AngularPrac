@@ -1,0 +1,41 @@
+<div style="text-align:center">
+    <h1>
+      Welcome Super Admin!
+    </h1>
+    <div class="modal-footer">
+    <p>
+      <button routerLink="/productDashboard">
+        Home
+      </button>
+      <button (click)="logout()">
+        Logout
+      </button>
+      <button routerLink="/productDashboard">
+        Product Dashboard
+      </button>
+    </p>
+    </div>
+    <img width="300" alt="Angular Logo"
+      src="assets/image/product_inventory.png">
+  </div>
+
+  <table class="table mt-3" style="background-color:cornflowerblue">
+    <thead>
+        <tr>
+            <th scope="col">Product ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Availability</th>
+        </tr>
+    </thead>
+    <tbody style="background-color:blanchedalmond">
+        <tr *ngFor="let row of productData">
+            <td>{{row.prod_id}}</td>
+            <td>{{row.name}}</td>
+            <td>{{row.description}}</td>
+            <td>{{row.price}}</td>
+            <td>{{row.availability}}</td>
+        </tr>
+    </tbody>
+</table>
