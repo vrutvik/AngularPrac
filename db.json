@@ -9,30 +9,6 @@
       "id": 1
     },
     {
-      "prod_id": 5,
-      "name": "T shirt ",
-      "description": "Round Neck , Winter , Full Sleeve",
-      "price": "35",
-      "availability": "Yes",
-      "id": 2
-    },
-    {
-      "prod_id": 12,
-      "name": "T shirt ",
-      "description": "Round Neck , Winter , Full Sleeve",
-      "price": "39.99",
-      "availability": "Yes",
-      "id": 3
-    },
-    {
-      "prod_id": 12,
-      "name": "T shirt ",
-      "description": "Round Neck , Winter , Full Sleeve",
-      "price": "19.99",
-      "availability": "Yes",
-      "id": 4
-    },
-    {
       "prod_id": 19,
       "name": "Perfume",
       "description": "Men's Perfume, 200ml",
@@ -43,10 +19,66 @@
     {
       "prod_id": 20,
       "name": "Perfume",
-      "description": "Women's, 100ml",
-      "price": "79.99",
+      "description": "Women's, 200ml",
+      "price": "99.99",
       "availability": "No",
       "id": 6
+    },
+    {
+      "prod_id": 30,
+      "name": "Shirt",
+      "description": "Casual, Plain, Cotton",
+      "price": "39.99",
+      "availability": "No",
+      "id": 7
+    },
+    {
+      "prod_id": 55,
+      "name": "Shoe",
+      "description": "Sports, Regular",
+      "price": "65.00",
+      "availability": "Yes",
+      "id": 8
+    },
+    {
+      "prod_id": 33,
+      "name": "Cargo, Jeans",
+      "description": "Regular Fit, Six Pockets, Flexible",
+      "price": "50",
+      "availability": "No",
+      "id": 9
+    },
+    {
+      "prod_id": 13,
+      "name": "T shirt",
+      "description": "V Neck ",
+      "price": "19.99",
+      "availability": "Yes",
+      "id": 10
+    },
+    {
+      "prod_id": 10,
+      "name": "Hoodie",
+      "description": "Unisex, No Print ",
+      "price": "59.99",
+      "availability": "Yes",
+      "id": 11
+    },
+    {
+      "prod_id": 9,
+      "name": "Deodorant ",
+      "description": "Sports, Light , Men's , 200ml",
+      "price": "9.99",
+      "availability": "No",
+      "id": 12
+    },
+    {
+      "prod_id": 8,
+      "name": "Deodorant",
+      "description": "Sports , Mild, Women's, 160ml",
+      "price": "9.99",
+      "availability": "Yes",
+      "id": 13
     }
   ],
   "comments": [],

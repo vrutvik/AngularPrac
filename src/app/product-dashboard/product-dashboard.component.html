@@ -1,13 +1,11 @@
-<nav class="nav navbar-light bg-primary" style="background-color: aqua;">
-    <div class="container-fluid">
-        <h1 style="color: black">Product Details </h1>
-
-    </div>
-</nav>
+<mat-toolbar color="primary">
+    <span class="fill-remaining-space">
+        Product Dashboard
+</span>
+</mat-toolbar>
 <div style="left: auto">
-    <button class="btn" routerLink="/admin">
-        Home
-    </button>
+        <mat-icon routerLink="/admin">home</mat-icon>
+        <span>Home</span>
 </div>
 <div class="float-end mt-3">
     <button type="button" class="btn btn-success" (click)="clickAddProduct()">Add Products</button>

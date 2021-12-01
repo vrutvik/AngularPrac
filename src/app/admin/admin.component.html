@@ -1,25 +1,98 @@
-<div style="text-align:center">
-    <h1>
-      Welcome Super Admin!
-    </h1>
-    <div class="modal-footer">
-    <p>
-      <button routerLink="/productDashboard">
-        Home
+<mat-toolbar color="primary">
+  <span class="fill-remaining-space">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" [overlapTrigger]="false">
+      <button mat-menu-item>
+        <mat-icon>info</mat-icon>
+        <span>Product Info</span>
       </button>
-      <button (click)="logout()">
-        Logout
+      <button mat-menu-item>
+        <mat-icon>people_outline</mat-icon>
+        <span>Our Team</span>
       </button>
-      <button routerLink="/productDashboard">
-        Product Dashboard
+      <button mat-menu-item routerLink="/productDashboard">
+        <mat-icon>dashboard</mat-icon>
+        <span>Dashboard</span>
       </button>
-    </p>
-    </div>
+      <button mat-menu-item routerLink="/contactus">
+        <mat-icon>contact_support</mat-icon>
+        <span>Contact US</span>
+      </button>
+      <button mat-menu-item routerLink="/login">
+        <mat-icon >exit_to_app</mat-icon>
+        <span>Logout</span>
+      </button>
+    </mat-menu>
+  </span>
+  <span class="fill-remaining-space">Welcome Super Admin</span>
+</mat-toolbar>
+<div style = "display: flex; justify-content:flex-end" >
+  <button mat-icon-button color="primary" aria-label="Example icon button with a logout icon" routerLink = "/login">
+    <mat-icon style = "display: flex; justify-content:right">exit_to_app</mat-icon>
+  </button></div>
+  <!-- <img mat-card-image style="display:block">
     <img width="300" alt="Angular Logo"
-      src="assets/image/product_inventory.png">
-  </div>
+      src="assets/image/product_inventory.png"/> -->
+      <mat-expansion-panel hideToggle *ngFor="let row of productData">
+        <mat-expansion-panel-header>
+          <mat-panel-title  >
+           {{row.name}}
+          </mat-panel-title>
+          <mat-panel-description style="display: flex; justify-content: center;">
+           {{row.description}} 
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        Availability : {{row.availability}}
+        <div style = "display: flex; justify-content:flex-end" >
+          <mat-icon (click)="onEdit(row)" class="material-icons-outlined">edit</mat-icon>
+        </div>
+      </mat-expansion-panel>
 
-  <table class="table mt-3" style="background-color:cornflowerblue">
+      <div class="modal" tabindex="-1" role="dialog" [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Edit & Update!</h4>
+                </div>
+                <div class="modal-body">
+                    <form [formGroup] = "formValue">
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Product ID</label>
+                            <input type="number" formControlName="prod_id" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Name</label>
+                            <input type="text" formControlName="name" class="form-control" >
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Description</label>
+                            <input type="text" formControlName="description" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Price</label>
+                            <input type="text" formControlName="price" class="form-control">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Availablity</label>
+                            <input type="text" formControlName="availability" class="form-control">
+                          </div>
+                    </form>
+    
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id = "cancel" class="btn btn-danger" (click)="closePopup()" data-bs-dismiss="modal">
+                        Close
+                    </button>
+                    <button class="btn btn-success" (click)="updateProduct()">
+                        Update!
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- <table mdbTable responsvie="true" class="table mt-3">
     <thead>
         <tr>
             <th scope="col">Product ID</th>
@@ -38,4 +111,4 @@
             <td>{{row.availability}}</td>
         </tr>
     </tbody>
-</table>
+</table> -->

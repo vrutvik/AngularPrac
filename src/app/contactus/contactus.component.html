@@ -1,0 +1,51 @@
+<p>
+    <mat-toolbar color="primary" class="app-header">
+      <div>Contact Us</div>
+    </mat-toolbar>
+    </p>
+    
+        <div style = "display: flex; justify-content:flex-start" >
+            <button mat-icon-button color="primary" aria-label="Example icon button with a logout icon" routerLink = "/login">
+              <mat-icon style = "display: flex; justify-content:left">back</mat-icon>
+            </button></div>  
+    
+      <p>
+      <mat-card class="my-card" style="text-align: center;"  >
+        <span style="text-align: center; font-size: 30px;">Send Your Queries</span>
+        <mat-card-content style="margin-top: 100px">
+           <form class="my-form">
+              <mat-form-field class="full-width">
+                 <mat-label>Name</mat-label>
+                 <input  matInput placeholder="Your Full Name">
+              </mat-form-field>
+              <p>          
+                <mat-form-field class="full-width">
+                 <mat-label>Company</mat-label>
+                 <input  matInput placeholder="Company Name" type="text">
+              </mat-form-field>
+            </p>
+            <p>          
+                <mat-form-field class="full-width">
+                 <mat-label>Email</mat-label>
+                 <input  matInput placeholder="Your Email/ Company Email" type="text">
+              </mat-form-field>
+            </p>
+              <p>          
+                <mat-form-field class="full-width">
+                 <mat-label>Phone Number</mat-label>
+                 <input  matInput placeholder="Mobile number" type="number">
+              </mat-form-field>
+            </p>
+            <p>          
+                <mat-form-field class="full-width">
+                 <mat-label>Question</mat-label>
+                 <input  matInput placeholder="Your Concern in short! " type="text">
+              </mat-form-field>
+            </p>
+           </form>
+        </mat-card-content>
+        <mat-card-actions>
+           <button mat-raised-button color="primary">Send -> </button>
+        </mat-card-actions>
+        </mat-card>
+        </p>

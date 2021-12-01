@@ -1,7 +1,34 @@
-<h1 style="text-align:center">
-  Product Database
-</h1>
-<div class="login" class="d-flex justify-content-center">
+<p>
+<mat-toolbar color="primary" class="app-header">
+  <div>Product Database</div>
+</mat-toolbar>
+</p>
+<p>
+  </p>
+  <p>
+  <mat-card class="my-card" style="text-align: center;"  >
+    <span style="text-align: center; font-size: 30px;">Log In</span>
+    <mat-card-content style="margin-top: 100px">
+       <form [formGroup]="loginForm" class="my-form" (ngSubmit)="login()">
+          <mat-form-field class="full-width">
+             <mat-label>Email</mat-label>
+             <input  matInput formControlName="email" placeholder="Email" name="email">
+          </mat-form-field>
+          <p>          
+            <mat-form-field class="full-width">
+             <mat-label>Password</mat-label>
+             <input  matInput formControlName="password" placeholder="Password" type="password">
+          </mat-form-field>
+        </p>
+       </form>
+    </mat-card-content>
+    <mat-card-actions>
+       <button mat-raised-button (click)="login()" color="primary">LOGIN</button>
+    </mat-card-actions>
+    </mat-card>
+    </p>
+  
+<!-- <div class="login" style = "display: flex; align-items: center; justify-content: center; ">
   <h2 class="login-header">Log In</h2>
   <div class="container h-100">
     <div class="row h-100 justify-content-center align-items-center">
@@ -30,4 +57,4 @@
   </form>
   </div>
   </div>
-</div>
+</div> -->
